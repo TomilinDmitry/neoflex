@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.77de22bd.css",
+    "main.js": "./static/js/main.11ba5948.js",
+    "static/media/headPhones_3.svg": "./static/media/headPhones_3.b62b2d17bf33497ac59c40220524208a.svg",
+    "static/media/headPhones_2.svg": "./static/media/headPhones_2.17ee7cd7f4549f2c9895b5749811345d.svg",
+    "static/media/headPhones_1.svg": "./static/media/headPhones_1.b69b949f829bdab22c04bcd24fa40883.svg",
+    "static/media/VK.svg": "./static/media/VK.1ac2cc8950aa67b1d5a09726dd0b60b1.svg",
+    "static/media/Whatsapp.svg": "./static/media/Whatsapp.f998ac590f1ccfac664e5e7b82ff9d54.svg",
+    "static/media/basket.svg": "./static/media/basket.d93aa996204975be68ead10224f6f601.svg",
+    "static/media/switchLanguageIcon.svg": "./static/media/switchLanguageIcon.7b9cc68c2528ffcafcbc1fb1ef414f63.svg",
+    "static/media/Telegram.svg": "./static/media/Telegram.4cff094a3c5b423ad84123f013184478.svg",
+    "static/media/deleteBasket.svg": "./static/media/deleteBasket.c3b466f51641c238a464efcaaee70ebf.svg",
+    "index.html": "./index.html",
+    "static/media/favorite.svg": "./static/media/favorite.9a5c8c617a09c69fc0561f9f20dc6d0c.svg",
+    "static/media/rating.svg": "./static/media/rating.52465aea59618e28393b22cbab61d80e.svg",
+    "main.77de22bd.css.map": "./static/css/main.77de22bd.css.map",
+    "main.11ba5948.js.map": "./static/js/main.11ba5948.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77de22bd.css",
+    "static/js/main.11ba5948.js"
+  ]
+}
