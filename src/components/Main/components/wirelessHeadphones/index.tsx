@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./index.module.scss";
 import Card from "../../../UI/Card";
-import { dataCards } from "../../../../services/data";
+import { dataCards } from "../../../../services/mocks/data";
 export const WirelessHeadPhones = () => {
   return (
     <div className={style.wrapper}>

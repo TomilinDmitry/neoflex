@@ -3,6 +3,11 @@
   justify-content: space-between;
   margin: 15px 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
 .logo {
   margin: 0;
   font-size: 25px;
@@ -11,4 +16,16 @@
 .imageContainer {
   display: flex;
   gap: 25px;
+  position: relative;
+}
+.counterElement {
+  display: flex;
+  position: absolute;
+  top: -5px;
+  width: 18px;
+  background-color: rgba(255, 165, 66, 1);
+  border-radius: 20px;
+  justify-content: center;
+  color: white;
+  left: 60px;
 }
