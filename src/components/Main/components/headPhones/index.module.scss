@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.title {
+  margin-bottom: 20px;
+  color: rgba(131, 131, 131, 1);
+  font-size: 20px;
+  font-weight: 600;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

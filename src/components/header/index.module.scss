@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.logo {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+.imageContainer {
+  display: flex;
+  gap: 25px;
+}
