@@ -1,6 +1,6 @@
 # Проект для Neoflex
 
-<a href=https://tomilindmitry.github.io/test-project/#/ style="color: white;">Тестовое задание</a>
+<a href=https://tomilindmitry.github.io/neoflex/#/ style="color: white;">Тестовое задание</a>
 
 # Neoflex
 
