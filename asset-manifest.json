@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.77de22bd.css",
+    "main.css": "./static/css/main.d4c3c21e.css",
     "main.js": "./static/js/main.11ba5948.js",
     "static/media/headPhones_3.svg": "./static/media/headPhones_3.b62b2d17bf33497ac59c40220524208a.svg",
     "static/media/headPhones_2.svg": "./static/media/headPhones_2.17ee7cd7f4549f2c9895b5749811345d.svg",
@@ -11,14 +11,14 @@
     "static/media/switchLanguageIcon.svg": "./static/media/switchLanguageIcon.7b9cc68c2528ffcafcbc1fb1ef414f63.svg",
     "static/media/Telegram.svg": "./static/media/Telegram.4cff094a3c5b423ad84123f013184478.svg",
     "static/media/deleteBasket.svg": "./static/media/deleteBasket.c3b466f51641c238a464efcaaee70ebf.svg",
-    "index.html": "./index.html",
     "static/media/favorite.svg": "./static/media/favorite.9a5c8c617a09c69fc0561f9f20dc6d0c.svg",
+    "index.html": "./index.html",
     "static/media/rating.svg": "./static/media/rating.52465aea59618e28393b22cbab61d80e.svg",
-    "main.77de22bd.css.map": "./static/css/main.77de22bd.css.map",
+    "main.d4c3c21e.css.map": "./static/css/main.d4c3c21e.css.map",
     "main.11ba5948.js.map": "./static/js/main.11ba5948.js.map"
   },
   "entrypoints": [
-    "static/css/main.77de22bd.css",
+    "static/css/main.d4c3c21e.css",
     "static/js/main.11ba5948.js"
   ]
 }
