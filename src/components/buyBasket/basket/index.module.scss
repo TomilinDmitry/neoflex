@@ -59,3 +59,25 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 700px) {
+  .wrapper {
+    align-items: center;
+  }
+  .container {
+    .card {
+      align-items: center;
+      width: 400px;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .container {
+    .card {
+      align-items: center;
+      width: 200px;
+    }
+    .totalPrice{
+      width: 300px;
+    }
+  }
+}
