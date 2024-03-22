@@ -4,6 +4,7 @@ import VK from "../../images/icons/VK.svg";
 import TG from "../../images/icons/Telegram.svg";
 import WS from "../../images/icons/Whatsapp.svg";
 import switchLanguageIcon from "../../images/icons/switchLanguageIcon.svg";
+import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer>
@@ -27,9 +28,15 @@ export const Footer = () => {
           </div>
         </div>
         <div className={style.imageContainer}>
-          <img src={VK} alt='backet' />
-          <img src={TG} alt='favorite' />
-          <img src={WS} alt='favorite' />
+          <Link to='https://vk.com/crymore3'>
+            <img src={VK} alt='VK' />
+          </Link>
+          <Link to='https://t.me/enjosss'>
+            <img src={TG} alt='TG' />
+          </Link>
+          <Link to='/'>
+            <img src={WS} alt='WS' />
+          </Link>
         </div>
       </div>
     </footer>
