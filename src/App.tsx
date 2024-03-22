@@ -5,6 +5,7 @@ import ShopPage from "./pages/shopPage";
 import { Header } from "./components/header";
 import style from "./App.module.scss";
 import { Footer } from "./components/footer";
+
 function App() {
   return (
     <div className={style.App}>

@@ -7,11 +7,14 @@ import {
   addItem,
   incrementItem,
 } from "../../../services/slices/productSlice";
+import { Modal } from "../../modal";
+import { ProductDetails } from "../../modal/productDetails";
 
 const Card = ({ ...card }: Tdata) => {
   const dispatch = useDispatch();
-  const [open, setOpen] = useState<boolean>(false);
   const { basket } = useSelector((state) => state.product);
+  const [open, setOpen] = useState<boolean>(false);
+
   const handleAddToBasket = () => {
     const existingItem = basket.find((item) => item.id === card.id);
     if (existingItem) {
@@ -20,51 +23,58 @@ const Card = ({ ...card }: Tdata) => {
       dispatch(addItem({ ...card }));
     }
   };
-  const handleClick = () => {
+
+  const handleOpen = () => {
     setOpen(true);
   };
-  const handleClickClose = () => {
+
+  const handleClose = () => {
     setOpen(false);
   };
+
   return (
-    <div className={style.container}>
-      <div className={style.image}>
-        <img src={card.image} alt='headPhone' />
-      </div>
-      <div className={style.infoBlock}>
-        <div className={style.info}>
-          <span onClick={handleClick}>{card.name}</span>
-          <p
-            className={`${
-              card.salePrice ? style.salePriceBlock : style.priceBlock
-            }`}>
-            <span className={style.price}>{card.price} ₽</span>
-            {card.salePrice && (
-              <span className={style.salePrice}>
-                {card.salePrice} ₽
-              </span>
-            )}
+    <>
+      <div className={style.container}>
+        <div
+          className={style.image}
+          onClick={handleOpen}
+          title='Нажми чтобы увидеть подробности...'>
+          <img src={card.image} alt='headPhone' />
+        </div>
+        <div className={style.infoBlock}>
+          <div className={style.info}>
+            <span>{card.name}</span>
+            <p
+              className={`${
+                card.salePrice
+                  ? style.salePriceBlock
+                  : style.priceBlock
+              }`}>
+              <span className={style.price}>{card.price} ₽</span>
+              {card.salePrice && (
+                <span className={style.salePrice}>
+                  {card.salePrice} ₽
+                </span>
+              )}
+            </p>
+          </div>
+          <p className={style.ratingBlock}>
+            <span className={style.rating}>
+              <img src={rating} alt='rating' />
+              {card.rating}
+            </span>
+            <button className={style.buy} onClick={handleAddToBasket}>
+              Купить
+            </button>
           </p>
         </div>
-        <p className={style.ratingBlock}>
-          <span className={style.rating}>
-            <img src={rating} alt='rating' />
-            {card.rating}
-          </span>
-          <button className={style.buy} onClick={handleAddToBasket}>
-            Купить{" "}
-          </button>
-        </p>
       </div>
       {open && (
-        <>
-          <div className={style.modal}>
-            Hello
-            <span onClick={handleClickClose}>close</span>
-          </div>
-        </>
+        <Modal close={handleClose}>
+          <ProductDetails card={card} onClose={handleClose} />
+        </Modal>
       )}
-    </div>
+    </>
   );
 };
 

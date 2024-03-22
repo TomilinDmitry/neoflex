@@ -10,9 +10,11 @@ export type TState = {
     id: number;
     count: number;
   }[];
+  openModal: boolean;
 };
 const initialState: TState = {
   basket: [],
+  openModal: false,
 };
 export const productSlice = createSlice({
   name: "product",
