@@ -9,13 +9,21 @@ export const Footer = () => {
   return (
     <footer>
       <div className={style.container}>
-        <p className={style.logo}>QPICK</p>
+        <Link to='/'>
+          <p className={style.logo}>QPICK</p>
+        </Link>
         <div className={style.center}>
           <div>
             <ul className={style.list}>
-              <li>Избранное</li>
-              <li>Корзина</li>
-              <li>Контакты</li>
+              <li title='Тут должна быть ссылка на страницу с избранным'>
+                Избранное
+              </li>
+              <Link to='/basket'>
+                <li>Корзина</li>
+              </Link>
+              <Link to='https://t.me/enjosss'>
+                <li>Контакты</li>
+              </Link>
             </ul>
           </div>
           <div className={style.conditions}>
